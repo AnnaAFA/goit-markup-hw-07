@@ -16,30 +16,30 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <div class="container page-header-container">
-            <nav class="navigation page-nav">
+    <header class="header">
+        <div class="container container-header">
+            <nav class="navigation">
                 <a class="logotype link" href="./index.html" lang="en">Web<span class="logo-header">Studio</span></a>
                 <ul class="menu list">
-                    <li class="menu-item">
-                        <a class="menu-link link" href="./index.html">Студія</a>
+                    <li class="menu__item">
+                        <a class="menu__link link" href="./index.html">Студія</a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-link link current" href="./portfolio.html">Портфоліо</a>
+                    <li class="menu__item">
+                        <a class="menu__link link menu__link_current" href="./portfolio.html">Портфоліо</a>
                     </li>
-                    <li class="menu-item"><a class="menu-link link" href="#">Контакти</a></li>
+                    <li class="menu__item"><a class="menu__link link" href="#">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="menu-contact list">
-                <li class="list-item">
-                    <a class="list-link link" href="mailto:info@devstudio.com">
-                        <svg class="header-icon" width="16px" height="12px">
+                <li class="menu-contact__item">
+                    <a class="menu-contact__link link" href="mailto:info@devstudio.com">
+                        <svg class="menu-contact__icon" width="16px" height="12px">
                             <use href="./images/sprite.svg#icon-envelope"></use>
                         </svg>info@devstudio.com</a>
                 </li>
-                <li class="list-item">
-                    <a class="list-link link" href="tel:+380961111111">
-                        <svg class="header-icon" width="10px" height="16px">
+                <li class="menu-contact__item">
+                    <a class="menu-contact__link link" href="tel:+380961111111">
+                        <svg class="menu-contact__icon" width="10px" height="16px">
                             <use href="./images/sprite.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
@@ -47,150 +47,153 @@
         </div>
     </header>
 
-    <main class="page-portfolio">
-        <section class="services section">
+    <main class="portfolio">
+        <section class="filter section">
             <div class="container">
                 <h1 class="visually-hidden">Наші послуги</h1>
-                <ul class="service-list list">
-                    <li class="service-item"><button class="service-btn" type="button">Усі</button></li>
-                    <li class="service-item">
-                        <button class="service-btn" type="button">Веб-сайти</button>
+                <ul class="portfolio-filter list">
+                    <li class="portfolio-filter__item"><button class="portfolio-filter__btn" type="button">Усі</button>
                     </li>
-                    <li class="service-item"><button class="service-btn" type="button">Додатки</button></li>
-                    <li class="service-item"><button class="service-btn" type="button">Дизайн</button></li>
-                    <li class="service-item">
-                        <button class="service-btn" type="button">Маркетинг</button>
+                    <li class="portfolio-filter__item">
+                        <button class="portfolio-filter__btn" type="button">Веб-сайти</button>
+                    </li>
+                    <li class="portfolio-filter__item"><button class="portfolio-filter__btn"
+                            type="button">Додатки</button></li>
+                    <li class="portfolio-filter__item"><button class="portfolio-filter__btn"
+                            type="button">Дизайн</button></li>
+                    <li class="portfolio-filter__item">
+                        <button class="portfolio-filter__btn" type="button">Маркетинг</button>
                     </li>
                 </ul>
                 <ul class="service-card list">
-                    <li class="service-card-item">
-                        <a class="service-card-item-link link" href="#">
-                            <div class="service-card-wrap">
+                    <li class="service-card__item">
+                        <a class="service-card__link link" href="#">
+                            <div class="service-wrap">
                                 <img src="./images/laptop.jpg" alt="Ноутбук з веб-сайтом" width="370" height="294" />
-                                <p class="overlay-service-card">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                <p class="service-card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="indent-service-card">
-                                <h2 class="service-title">Технокряк</h2>
-                                <p class="service-text">Веб-сайт</p>
+                                <h2 class="service-card__title">Технокряк</h2>
+                                <p class="service-card__text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="service-card-item">
-                        <a class="service-card-item-link link" href="#">
-                            <div class="service-card-wrap">
+                    <li class="service-card__item">
+                        <a class="service-card__link link" href="#">
+                            <div class="service-wrap">
                                 <img src="./images/design.jpg" alt="Двоє чоловіків грають у баскетбол" width="370"
                                     height="294" />
-                                <p class="overlay-service-card">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                <p class="service-card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="indent-service-card">
-                                <h2 class="service-title">
+                                <h2 class="service-card__title">
                                     Постер <span lang="en">New Orlean vs Golden Star</span>
                                 </h2>
-                                <p class="service-text">Дизайн</p>
+                                <p class="service-card__text">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="service-card-item">
-                        <a class="service-card-item-link link" href="#">
-                            <div class="service-card-wrap">
+                    <li class="service-card__item">
+                        <a class="service-card__link link" href="#">
+                            <div class="service-wrap">
                                 <img src="./images/app.jpg" alt="Логотип ресторану" width="370" height="294" />
-                                <p class="overlay-service-card">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                <p class="service-card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="indent-service-card">
-                                <h2 class="service-title">Ресторан <span lang="en">Seafood</span></h2>
-                                <p class="service-text">Додаток</p>
+                                <h2 class="service-card__title">Ресторан <span lang="en">Seafood</span></h2>
+                                <p class="service-card__text">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="service-card-item">
-                        <a class="service-card-item-link link" href="#">
-                            <div class="service-card-wrap">
+                    <li class="service-card__item">
+                        <a class="service-card__link link" href="#">
+                            <div class="service-wrap">
                                 <img src="./images/marketing.jpg" alt="Навушники" width="370" height="294" />
-                                <p class="overlay-service-card">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                <p class="service-card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="indent-service-card">
-                                <h2 class="service-title">Проєкт <span lang="en">Prime</span></h2>
-                                <p class="service-text">Маркетинг</p>
+                                <h2 class="service-card__title">Проєкт <span lang="en">Prime</span></h2>
+                                <p class="service-card__text">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="service-card-item">
-                        <a class="service-card-item-link link" href="#">
-                            <div class="service-card-wrap">
+                    <li class="service-card__item">
+                        <a class="service-card__link link" href="#">
+                            <div class="service-wrap">
                                 <img src="./images/block.jpg" alt="Дві коробки" width="370" height="294" />
-                                <p class="overlay-service-card">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                <p class="service-card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="indent-service-card">
-                                <h2 class="service-title">Проєкт <span lang="en">Boxes</span></h2>
-                                <p class="service-text">Додаток</p>
+                                <h2 class="service-card__title">Проєкт <span lang="en">Boxes</span></h2>
+                                <p class="service-card__text">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="service-card-item">
-                        <a class="service-card-item-link link" href="#">
-                            <div class="service-card-wrap">
+                    <li class="service-card__item">
+                        <a class="service-card__link link" href="#">
+                            <div class="service-wrap">
                                 <img src="./images/computer.jpg" alt="Комп'ютер з веб-сайтом" width="370"
                                     height="294" />
-                                <p class="overlay-service-card">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                <p class="service-card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="indent-service-card">
-                                <h2 class="service-title" lang="en">Inspiration has no Borders</h2>
-                                <p class="service-text">Веб-сайт</p>
+                                <h2 class="service-card__title" lang="en">Inspiration has no Borders</h2>
+                                <p class="service-card__text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="service-card-item">
-                        <a class="service-card-item-link link" href="#">
-                            <div class="service-card-wrap">
+                    <li class="service-card__item">
+                        <a class="service-card__link link" href="#">
+                            <div class="service-wrap">
                                 <img src="./images/book.jpg" alt="Відкрита книга" width="370" height="294" />
-                                <p class="overlay-service-card">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                <p class="service-card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="indent-service-card">
-                                <h2 class="service-title">Видання <span lang="en">Limited Edition</span></h2>
-                                <p class="service-text">Дизайн</p>
+                                <h2 class="service-card__title">Видання <span lang="en">Limited Edition</span></h2>
+                                <p class="service-card__text">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="service-card-item">
-                        <a class="service-card-item-link link" href="#">
-                            <div class="service-card-wrap">
+                    <li class="service-card__item">
+                        <a class="service-card__link link" href="#">
+                            <div class="service-wrap">
                                 <img src="./images/label.jpg" alt="Етикетка" width="370" height="294" />
-                                <p class="overlay-service-card">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                <p class="service-card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="indent-service-card">
-                                <h2 class="service-title">Проєкт <span lang="en">LAB</span></h2>
-                                <p class="service-text">Маркетинг</p>
+                                <h2 class="service-card__title">Проєкт <span lang="en">LAB</span></h2>
+                                <p class="service-card__text">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="service-card-item">
-                        <a class="service-card-item-link link" href="#">
-                            <div class="service-card-wrap">
+                    <li class="service-card__item">
+                        <a class="service-card__link link" href="#">
+                            <div class="service-wrap">
                                 <img src="./images/laptop-app.jpg" alt="Чоловік працює за ноутбуком" width="370"
                                     height="294" />
-                                <p class="overlay-service-card">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                <p class="service-card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="indent-service-card">
-                                <h2 class="service-title" lang="en">Growing Business</h2>
-                                <p class="service-text">Додаток</p>
+                                <h2 class="service-card__title" lang="en">Growing Business</h2>
+                                <p class="service-card__text">Додаток</p>
                             </div>
                         </a>
                     </li>
@@ -199,23 +202,22 @@
         </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="footer">
         <div class="container footer-wrap">
-            <div class="right-wrap">
+            <div class="footer-wrap__right">
                 <a class="logotype link logo-link-footer" href="./index.html" lang="en">Web<span
                         class="logo-footer">Studio</span></a>
-                <address class="address-footer">
-                    <ul class="list">
-                        <li class="address-item">
-                            <a class="address-link link" href="https://goo.gl/maps/DQUVDp7Fr1gkrE9Y7" target="_blank"
-                                rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки,
-                                26</a>
+                <address class="address">
+                    <ul class="address-list list">
+                        <li class="address__item">
+                            <a class="address__link link" href="https://goo.gl/maps/DQUVDp7Fr1gkrE9Y7" target="_blank"
+                                rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a>
                         </li>
-                        <li class="address-item">
-                            <a class="info-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <li class="address__item">
+                            <a class="address__info link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
-                        <li class="address-item">
-                            <a class="info-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <li class="address__item">
+                            <a class="address__info link" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
@@ -223,46 +225,47 @@
             <div class="contacts-wrap">
                 <p class="footer-text">Приєднуйтесь</p>
 
-                <ul class="footer-icon-list list">
-                    <li class="footer-icon-item">
-                        <a class="footer-icon-link link" href="#">
-                            <svg class="footer-icon" width="20px" height="20px">
+                <ul class="footer-contacts list">
+                    <li class="footer-contacts__item">
+                        <a class="footer-contacts__link link" href="#">
+                            <svg class="footer-contacts__icon" width="20px" height="20px">
                                 <use href="./images/sprite.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-icon-item">
-                        <a class="footer-icon-link link" href="#">
-                            <svg class="footer-icon" width="20px" height="20px">
+                    <li class="footer-contacts__item">
+                        <a class="footer-contacts__link link" href="#">
+                            <svg class="footer-contacts__icon" width="20px" height="20px">
                                 <use href="./images/sprite.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-icon-item">
-                        <a class="footer-icon-link link" href="#">
-                            <svg class="footer-icon" width="20px" height="20px">
+                    <li class="footer-contacts__item">
+                        <a class="footer-contacts__link link" href="#">
+                            <svg class="footer-contacts__icon" width="20px" height="20px">
                                 <use href="./images/sprite.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-icon-item">
-                        <a class="footer-icon-link link" href="#">
-                            <svg class="footer-icon" width="20px" height="20px">
+                    <li class="footer-contacts__item">
+                        <a class="footer-contacts__link link" href="#">
+                            <svg class="footer-contacts__icon" width="20px" height="20px">
                                 <use href="./images/sprite.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="footer-signup">
-                <p class="signup-text">Підпишіться на розсилку</p>
-                <form class="footer-form">
-                    <label for="" class="footer-form-label">
-                        <input type="email" class="footer-form-input" placeholder="E-mail" name="email" required />
+
+            <div class="sign-up">
+                <p class="sign-up__text">Підпишіться на розсилку</p>
+                <form class="sign-up-form">
+                    <label for="" class="sign-up-form__label">
+                        <input type="email" class="sign-up-form__input" placeholder="E-mail" name="email" required />
                     </label>
-                    <button type="submit" class="footer-form-btn">
+                    <button type="submit" class="sign-up-form__btn main-btn">
                         Підписатися
-                        <svg class="footer-form-img" width="24px" height="24px">
+                        <svg class="sign-up-form__img" width="24px" height="24px">
                             <use href="./images/sprite.svg#icon-send"></use>
                         </svg>
                     </button>
